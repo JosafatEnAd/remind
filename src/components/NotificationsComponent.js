@@ -1,7 +1,7 @@
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 import React, { useState, useEffect, useRef } from 'react';
-import { Platform } from 'react-native';
+import { Button, Platform } from 'react-native';
 
 Notifications.setNotificationHandler({
     handleNotification: async () => ({
@@ -35,7 +35,9 @@ export default function NotificationsComponent() {
     }, []);
 
     return (
-        null
+        <Button title='sdas' onPress={
+            schedulePushNotification()
+        }/>
     );
 }
 

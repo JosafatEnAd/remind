@@ -67,7 +67,6 @@ const AddComponent = () => {
                 <Pressable onPress={() => setModalVisible(true)} style={styles.button}>
                     <Text style={styles.icon}>+</Text>
                 </Pressable>
-
             </View>
         </>
     )

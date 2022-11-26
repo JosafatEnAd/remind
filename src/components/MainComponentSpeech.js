@@ -47,9 +47,6 @@ export default function MainComponentSpeech() {
   console.log(results[0])
   return (
     <View>
-      <TextInput placeholder='Nombre' style={{ height: 100 }} onChangeText={setName} />
-      <Button title="Press to hear some words" onPress={speak} />
-
       <View>
         {!started ? <Button title='Empezar a hablar' onPress={startSpeechToText} /> : undefined}
         {started ? <Button title='Stop Speech to Text' onPress={stopSpeechToText} /> : undefined}

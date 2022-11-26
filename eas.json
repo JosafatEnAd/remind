@@ -14,5 +14,14 @@
   },
   "submit": {
     "production": {}
-  }
+  },
+  "plugins": [
+    [
+      "expo-notifications",
+      {
+        "icon": "./assets/favicon.png",
+        "color": "#ffffff"
+      }
+    ]
+  ]
 }
