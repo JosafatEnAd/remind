@@ -9,14 +9,25 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-voice/voice": "^3.2.4",
     "expo": "~47.0.8",
+    "expo-dev-client": "~2.0.1",
+    "expo-speech": "~11.0.0",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
-    "react-native": "0.70.5",
-    "expo-speech": "~11.0.0"
+    "react-native": "0.70.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
   },
+  "plugins": [
+    [
+      "@react-native-voice/voice",
+      {
+        "microphonePermission": "Allow Voice to Text Tutorial to access the microphone",
+        "speechRecognitionPermission": "Allow Voice to Text Tutorial to securely recognize user speech"
+      }
+    ]
+  ],
   "private": true
 }
