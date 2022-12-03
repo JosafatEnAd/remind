@@ -12,10 +12,6 @@ const MainScreen=() => {
                 {/* Invocación del componente para el header */}
                 <HaderComponent />
                 <View style={[styles.Body, { justifyContent: 'flex-start' }]}>
-                    <View style={[styles.VoiceBox, { alignSelf: 'center' }]}>
-                        <Text style={[styles.TextVoiceBox]}>Toca para usar el microfono</Text>
-                        <Image source={require('../resources/microfono_icono.png')} style={[{ width: 45, height: 45, marginTop: 2 }]} />
-                    </View>
                     <Text style={[{ fontSize: 20, fontWeight: '900', alignSelf: 'center', marginTop: 25 }]}>Todo lo que tienes que tomar hoy:</Text>
                     <View style={[styles.BodyRContainer]}>
                         <View style={[styles.BodyCContainer]}>
